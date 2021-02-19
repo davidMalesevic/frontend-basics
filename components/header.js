@@ -40,7 +40,7 @@ export default function Header() {
         </Link>
       </h2>
       <div className="w-64 flex flex-row justify-between font-sans font-normal text-xl">
-        <NavItems />
+        {/* <NavItems /> */}
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function PostPreview({
   title,
-  coverImage,
+  category,
   date,
   link,
   excerpt,
@@ -15,21 +15,19 @@ export default function PostPreview({
   return (
     <div>
       <div className="mb-5"></div>
-      <h3 className="text-3xl mb-3 leading-snug">
+      <h3 className="text-5xl mb-1 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>
       </h3>
-      <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
-      </div>
+      <h3 className="text-xl mb-3 font-black">{category}</h3>
+
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <div className="text-lg mb-4">
         <a className="hover:underline" href={link}>
           {link}
         </a>
       </div>
-      <Avatar name={author.name} picture={author.picture} />
     </div>
   );
 }

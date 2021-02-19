@@ -8,12 +8,12 @@ export default function MoreStories({ posts }) {
           <PostPreview
             key={post.slug}
             title={post.title}
-            coverImage={post.coverImage}
             date={post.date}
             link={post.link}
             author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
+            category={post.category}
           />
         ))}
       </div>
