@@ -2,6 +2,7 @@ import Container from "../components/container";
 import MoreStories from "../components/more-stories";
 import HeroPost from "../components/hero-post";
 import Intro from "../components/intro";
+import Header from "../components/header";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
@@ -17,7 +18,7 @@ export default function Index({ allPosts }) {
           <title>IAD Basics</title>
         </Head>
         <Container>
-          <Intro />
+          <Header />
           {/* {heroPost && (
             <HeroPost
               title={heroPost.title}
